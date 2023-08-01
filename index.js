@@ -30,11 +30,13 @@
       body: JSON.stringify(appointment),
     }).then(() => {
       //displayAppointments(); // Call displayAppointments after saving the new appointment
+    //  alert("Appointment made successful")
       redirectToLogin(); // Call the function to redirect to the login page
+      
     });
   }
 
-  function displayAppointments() {
+  /*function displayAppointments() {
     fetch(base_url)
       .then((response) => response.json())
       .then((data) => {
@@ -51,7 +53,7 @@
           appointmentList.appendChild(appointmentDiv);
         });
       });
-  }
+  }*/
 
   function redirectToLogin() {
     window.location.href = "/login.html"; // Replace with your login page URL
