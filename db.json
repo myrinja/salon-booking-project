@@ -107,6 +107,30 @@
       "hairstyle": "hairstyle1",
       "day": "2023-08-05",
       "id": 18
+    },
+    {
+      "name": "shaa",
+      "hairstyle": "hairstyle1",
+      "day": "2023-08-31",
+      "id": 19
+    },
+    {
+      "name": "wangu",
+      "hairstyle": "hairstyle1",
+      "day": "2023-08-27",
+      "id": 20
+    },
+    {
+      "name": "miriam",
+      "hairstyle": "hairstyle1",
+      "day": "2023-08-03",
+      "id": 21
+    },
+    {
+      "name": "miriam",
+      "hairstyle": "hairstyle1",
+      "day": "2023-09-06",
+      "id": 22
     }
   ]
 }

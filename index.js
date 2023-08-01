@@ -1,64 +1,56 @@
 
-  const form = document.getElementById("appointmentForm");
-  const appointmentList = document.getElementById("appointmentList");
+  const loginForm = document.getElementById("loginForm");
 
-  form.addEventListener("submit", (event) => {
+  loginForm.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    const name = document.getElementById("name").value;
-    const hairstyle = document.getElementById("hairstyle").value;
-    const day = document.getElementById("day").value;
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
 
-    const appointment = {
-      name,
-      hairstyle,
-      day,
+    const loginData = {
+      email,
+      password,
     };
 
-    saveAppointment(appointment);
-    form.reset();
-  });
-
-  const base_url = "http://localhost:3000/appointments";
-
-  function saveAppointment(appointment) {
-    fetch(base_url, {
+    // Assuming the login API endpoint is "http://localhost:3000/login"
+    fetch("", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(appointment),
-    }).then(() => {
-      //displayAppointments(); // Call displayAppointments after saving the new appointment
-    //  alert("Appointment made successful")
-      redirectToLogin(); // Call the function to redirect to the login page
-      
-    });
-  }
-
-  /*function displayAppointments() {
-    fetch(base_url)
+      body: JSON.stringify(loginData),
+    })
       .then((response) => response.json())
       .then((data) => {
-        appointmentList.innerHTML = "";
-        data.forEach((appointment) => {
-          const appointmentDiv = document.createElement("div");
-          appointmentDiv.classList.add("appointment-item");
-          appointmentDiv.innerHTML = `
-            <p><strong>Name:</strong> ${appointment.name}</p>
-            <p><strong>Hair Style:</strong> ${appointment.hairstyle}</p>
-            <p><strong>Day to Attend:</strong> ${appointment.day}</p>
-            <hr>
-          `;
-          appointmentList.appendChild(appointmentDiv);
-        });
+        // Assume the server returns a "success" property in the response
+        if (data.success) {
+          redirectToBookAppointment();
+        } else {
+          alert("Login failed. Please try again.");
+        }
+      })
+      .catch((error) => {
+        console.error("Error during login:", error);
       });
-  }*/
-
-  function redirectToLogin() {
-    window.location.href = "/login.html"; // Replace with your login page URL
-  }
-
-  displayAppointments();
-
+  });
+  // login.js
+document.getElementById("loginForm").addEventListener("submit", (event) => {
+    event.preventDefault();
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
     
+    // Add your logic here to validate the login credentials
+    // For demonstration purposes, let's assume successful login:
+    //if (email === "example@example.com" && password === "password") {
+      redirectToBookAppointment();
+    //} else {
+     // alert("Invalid email or password. Please try again.");
+    //}
+  });
+  
+  function redirectToBookAppointment() {
+    window.location.href = "/login.html";
+  }
+  
+
+  
