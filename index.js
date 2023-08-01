@@ -47,6 +47,29 @@ document.getElementById("loginForm").addEventListener("submit", (event) => {
      // alert("Invalid email or password. Please try again.");
     //}
   });
+  const style_url = "http://localhost:3000/hairstyles"
+
+  function displayHairstyle(){
+    fetch(style_url)
+    .then(res => res.json())
+    .then (data => {
+      data.forEach(hairstyle => {
+        const div = document.getElementById("listy")
+        const ul = document.getElementById("mystyle")
+        const li = document.createElement("li")
+        ul.appendChild(li)
+        li.innerHTML = `
+        <p>Hairstyle name:${hairstyle.name} </p><br>
+        <p>Price:${hairstyle.price}$</p><br>
+        <img src= '${hairstyle.image_url}'>
+        
+        `
+        
+      });
+    })
+
+  }
+  displayHairstyle();
   
   function redirectToBookAppointment() {
     window.location.href = "/appointment.html";

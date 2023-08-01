@@ -20,7 +20,6 @@ body {
   }
   a:link {
     color: green;
-    background-color: ;
     text-decoration: none;
   }
   
@@ -42,9 +41,6 @@ body {
     text-decoration: underline;
   }
 
-  h1{
-    display: ;
-  }
   header {
     background-color: #333;
     color: #fff;
@@ -83,4 +79,18 @@ body {
   #appointmentList {
     margin-top: 2rem;
   }
-  
+  #listy{
+    display: inline-block;
+    margin-left: 20%;
+    
+  }
+  #listy h1{
+    color: red;
+    align-items: center;
+    margin-left: 25%;
+  }
+  #listy li{
+    display: inline-block;
+    padding: 5%;
+    align-items: center;
+  }
