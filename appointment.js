@@ -30,7 +30,7 @@
       body: JSON.stringify(appointment),
     }).then(() => {
       //displayAppointments(); // Call displayAppointments after saving the new appointment
-    //  alert("Appointment made successful")
+    alert("Appointment made successful")
       redirectToIndex(); // Call the function to redirect to the login page
       
     });
@@ -56,7 +56,7 @@
   }*/
 
   function redirectToIndex() {
-    window.location.href = "/index.html"; // Replace with your login page URL
+    window.location.href = ""; // Replace with your login page URL
   }
 
   displayAppointments();

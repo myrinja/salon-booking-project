@@ -14,7 +14,37 @@ body {
   /*filter: blur(8px);*/
   
   }
+  .background{
+    filter: blur(100%);
+    -webkit-filter: blur(1500px);
+  }
+  a:link {
+    color: green;
+    background-color: ;
+    text-decoration: none;
+  }
   
+  a:visited {
+    color: rgb(30, 6, 240);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  h1{
+    display: ;
+  }
   header {
     background-color: #333;
     color: #fff;

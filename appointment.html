@@ -13,25 +13,26 @@
 
   <main id="main">
     <form id="appointmentForm">
-      <label for="name">Name:</label>
+      <label for="name" style="color: rgb(233, 222, 222);">Name:</label>
       <input type="text" id="name" required>
 
-      <label for="hair-style">Hair Style:</label>
+      <label for="hair-style" style="color: rgb(233, 222, 222);">Hair Style:</label>
       <select id="hairstyle" required>
         <option value="hairstyle1">Hair Style 1</option>
         <option value="hairstyle2">Hair Style 2</option>
         <!--Add more hairstyle options as needed --->
       </select>
       
-   <label for="hairstyle">upload your hair syle</label>   
+   <label for="hairstyle" style="color: rgb(233, 222, 222);"><strong> Upload hair syle</strong></label>   
   <input type="file" id="myfile" name="myfile">
 
-      <label for="day">Day to Attend:</label>
+      <label for="day" style="color: rgb(2, 2, 2);">Day to Attend:</label>
       <input type="date" id="day" required>
 
       <button type="submit">Book Appointment</button>
-    </form>
-
+    </form><br>
+    <a href="index.html" style="padding-left: 600px; background: ;">Back to homepage</a>
+  
     <div id="appointmentList">
       <!-- Appointments will be dynamically displayed here -->
     </div>
