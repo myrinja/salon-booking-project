@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salon Appointment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Salon Appointment Booking</h1>
+  </header>
+
+  <main>
+    <form id="appointmentForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="hairstyle">Hair Style:</label>
+      <select id="hairstyle" required>
+        <option value="hairstyle1">Hair Style 1</option>
+        <option value="hairstyle2">Hair Style 2</option>
+        <!-- Add more hairstyle options as needed -->
+      </select>
+
+      <label for="day">Day to Attend:</label>
+      <input type="date" id="day" required>
+
+      <button type="submit">Book Appointment</button>
+    </form>
+
+    <div id="appointmentList">
+      <!-- Appointments will be dynamically displayed here -->
+    </div>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
