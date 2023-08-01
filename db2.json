@@ -1,0 +1,35 @@
+{
+    "hairstyles": [
+      {
+        "id": 1,
+        "name": "Short Bob",
+        "image_url": "https://example.com/images/short_bob.jpg",
+        "price": 40
+      },
+      {
+        "id": 2,
+        "name": "Long Layers",
+        "image_url": "https://example.com/images/long_layers.jpg",
+        "price": 55
+      },
+      {
+        "id": 3,
+        "name": "Pixie Cut",
+        "image_url": "https://example.com/images/pixie_cut.jpg",
+        "price": 35
+      },
+      {
+        "id": 4,
+        "name": "Beach Waves",
+        "image_url": "https://example.com/images/beach_waves.jpg",
+        "price": 50
+      },
+      {
+        "id": 5,
+        "name": "Messy Bun",
+        "image_url": "https://example.com/images/messy_bun.jpg",
+        "price": 30
+      }
+    ]
+  }
+  

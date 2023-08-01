@@ -1,56 +1,62 @@
-      const form = document.getElementById("appointmentForm");
-      const appointmentList = document.getElementById("appointmentList");
 
-      form.addEventListener("submit", (event) => {
-        event.preventDefault();
+  const form = document.getElementById("appointmentForm");
+  const appointmentList = document.getElementById("appointmentList");
 
-        const name = document.getElementById("name").value;
-        const hairstyle = document.getElementById("hairstyle").value;
-        const day = document.getElementById("day").value;
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
 
-        const appointment = {
-          name,
-          hairstyle,
-          day,
-        };
+    const name = document.getElementById("name").value;
+    const hairstyle = document.getElementById("hairstyle").value;
+    const day = document.getElementById("day").value;
 
-        saveAppointment(appointment);
-        form.reset();
-      });
+    const appointment = {
+      name,
+      hairstyle,
+      day,
+    };
 
-      const base_url = "http://localhost:3000/appointments";
+    saveAppointment(appointment);
+    form.reset();
+  });
 
-      function saveAppointment(appointment) {
-        fetch(base_url, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(appointment),
-        })
-        .then(() => {
-          displayAppointments(); // Call displayAppointments after saving the new appointment
+  const base_url = "http://localhost:3000/appointments";
+
+  function saveAppointment(appointment) {
+    fetch(base_url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(appointment),
+    }).then(() => {
+      //displayAppointments(); // Call displayAppointments after saving the new appointment
+      redirectToLogin(); // Call the function to redirect to the login page
+    });
+  }
+
+  function displayAppointments() {
+    fetch(base_url)
+      .then((response) => response.json())
+      .then((data) => {
+        appointmentList.innerHTML = "";
+        data.forEach((appointment) => {
+          const appointmentDiv = document.createElement("div");
+          appointmentDiv.classList.add("appointment-item");
+          appointmentDiv.innerHTML = `
+            <p><strong>Name:</strong> ${appointment.name}</p>
+            <p><strong>Hair Style:</strong> ${appointment.hairstyle}</p>
+            <p><strong>Day to Attend:</strong> ${appointment.day}</p>
+            <hr>
+          `;
+          appointmentList.appendChild(appointmentDiv);
         });
-      }
+      });
+  }
 
-      function displayAppointments() {
-        fetch(base_url)
-          .then((response) => response.json())
-          .then((data) => {
-            appointmentList.innerHTML = "";
-            data.forEach((appointment) => {
-              const appointmentDiv = document.createElement("div");
-              appointmentDiv.classList.add("appointment-item");
-              appointmentDiv.innerHTML = `
-                <p><strong>Name:</strong> ${appointment.name}</p>
-                <p><strong>Hair Style:</strong> ${appointment.hairstyle}</p>
-                <p><strong>Day to Attend:</strong> ${appointment.day}</p>
-                <hr>
-              `;
-              appointmentList.appendChild(appointmentDiv);
-            });
-          });
-      }
+  function redirectToLogin() {
+    window.location.href = "/login.html"; // Replace with your login page URL
+  }
 
-      displayAppointments();
+  displayAppointments();
+
     
