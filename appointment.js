@@ -56,7 +56,7 @@
   }*/
 
   function redirectToIndex() {
-    window.location.href = "/appointment.html"; // Replace with your login page URL
+    window.location.href = "/index.html"; // Replace with your login page URL
   }
 
   displayAppointments();
