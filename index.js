@@ -49,7 +49,7 @@ document.getElementById("loginForm").addEventListener("submit", (event) => {
   });
   
   function redirectToBookAppointment() {
-    window.location.href = "/login.html";
+    window.location.href = "/appointment.html";
   }
   
 
