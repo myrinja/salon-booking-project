@@ -149,6 +149,44 @@
       "hairstyle": "hairstyle1",
       "day": "2023-08-03",
       "id": 25
+    },
+    {
+      "name": "jaane",
+      "hairstyle": "1",
+      "day": "2023-08-25",
+      "id": 26
+    }
+  ],
+  "hairstyles": [
+    {
+      "id": 1,
+      "name": "Short Bob",
+      "image_url": "https://i.pinimg.com/236x/a2/0f/91/a20f91d129168c490e8e0738fd10e157.jpg",
+      "price": 10
+    },
+    {
+      "id": 2,
+      "name": "Long Layers",
+      "image_url": "https://i.pinimg.com/236x/c1/ca/7e/c1ca7eb28e66cbe89dbb56a99f45dc7f.jpg",
+      "price": 55
+    },
+    {
+      "id": 3,
+      "name": "Pixie Cut",
+      "image_url": "https://i.pinimg.com/236x/80/9d/02/809d020ff89affe4162ab878e650e9a1.jpg",
+      "price": 35
+    },
+    {
+      "id": 4,
+      "name": "Beach Waves",
+      "image_url": "https://i.pinimg.com/236x/1d/ae/e2/1daee25a9f91347421c677e635971df5.jpg",
+      "price": 50
+    },
+    {
+      "id": 5,
+      "name": "Messy Bun",
+      "image_url": "https://i.pinimg.com/236x/30/0f/46/300f46e1c04622be1c84e665d8467277.jpg",
+      "price": 30
     }
   ]
 }

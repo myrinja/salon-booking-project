@@ -35,6 +35,20 @@
       
     });
   }
+  const style_url = "http://localhost:3000/hairstyles"
+  fetch(style_url)
+  .then(res => res.json())
+  .then(data => {
+
+    data.forEach((hairstyle)=> {
+        const hairstyleSelect = document.getElementById("hairstyle");
+        const option = document.createElement("option");
+        option.value = hairstyle.id;
+        option.textContent = hairstyle.name;
+        hairstyleSelect.appendChild(option);
+  })
+  })
+
 
   /*function displayAppointments() {
     fetch(base_url)
