@@ -12,7 +12,7 @@
       password,
     };
 
-    // Assuming the login API endpoint is "http://localhost:3000/login"
+    //login post
     fetch("", {
       method: "POST",
       headers: {
@@ -22,7 +22,7 @@
     })
       .then((response) => response.json())
       .then((data) => {
-        // Assume the server returns a "success" property in the response
+        // if server returns a "success" property in the response
         if (data.success) {
           redirectToBookAppointment();
         } else {
@@ -39,14 +39,15 @@ document.getElementById("loginForm").addEventListener("submit", (event) => {
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
     
-    // Add your logic here to validate the login credentials
-    // For demonstration purposes, let's assume successful login:
+    //  validate the login credentials
+    
     //if (email === "example@example.com" && password === "password") {
       redirectToBookAppointment();
     //} else {
      // alert("Invalid email or password. Please try again.");
     //}
   });
+  //fetch data and display on landing page
   const style_url = "http://localhost:3000/hairstyles"
 
   function displayHairstyle(){
@@ -70,7 +71,7 @@ document.getElementById("loginForm").addEventListener("submit", (event) => {
 
   }
   displayHairstyle();
-  
+  //after successfully login redirect to appointment booking page
   function redirectToBookAppointment() {
     window.location.href = "/appointment.html";
   }

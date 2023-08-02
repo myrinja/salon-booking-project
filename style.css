@@ -98,3 +98,12 @@ body {
     align-items: center;
     size: 50%;
   }
+
+  /* style for admin login page*/
+  a {
+   margin: 1px;
+    padding: 10Px;
+    padding-left: 200px;
+    display: flex;
+    align-items: center;
+  }
