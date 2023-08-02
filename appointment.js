@@ -8,11 +8,12 @@
     const name = document.getElementById("name").value;
     const hairstyle = document.getElementById("hairstyle").value;
     const day = document.getElementById("day").value;
-
+    const file = document.getElementById("myfile").files[0]
     const appointment = {
       name,
       hairstyle,
       day,
+      file,
     };
 
     saveAppointment(appointment);

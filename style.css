@@ -1,5 +1,5 @@
 body {
-  background: url('background.jpg') ;
+  background: url('background.jpg' ) ;
   /*background-position: 0%;
   height: fit-content;
   width: fit-content;
@@ -12,16 +12,18 @@ body {
   background-size: 1530px;
   background-size: cover;
   /*filter: blur(8px);*/
+  backdrop-filter: blur(100px);
   
   }
-  .background{
+  /*.background{
     filter: blur(100%);
     -webkit-filter: blur(1500px);
-  }
+  }*/
   a:link {
     color: green;
     text-decoration: none;
   }
+  
   
   a:visited {
     color: rgb(30, 6, 240);
@@ -88,9 +90,11 @@ body {
     color: rgb(145, 58, 58);
     align-items: center;
     margin-left: 25%;
+    padding: 5%;
   }
   #listy li{
     display: inline-block;
     padding: 5%;
     align-items: center;
+    size: 50%;
   }

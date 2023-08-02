@@ -59,8 +59,8 @@ document.getElementById("loginForm").addEventListener("submit", (event) => {
         const li = document.createElement("li")
         ul.appendChild(li)
         li.innerHTML = `
-        <p>Hairstyle name:${hairstyle.name} </p><br>
-        <p>Price:${hairstyle.price}$</p><br>
+        <p>Hairstyle name:${hairstyle.name} </p>
+        <p>Price:${hairstyle.price}$</p>
         <img src= '${hairstyle.image_url}'>
         
         `
