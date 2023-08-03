@@ -10,8 +10,8 @@ const adminDetails ={
     const password = document.getElementById("password").value;
 
    if(username === "admin" && password=== "12345"){
-        alert("Nice")
-        window.location.href = "displayappointment.html";
+        
+    window.location.href = "displayappointment.html";
     }
     else{
         alert("Invalid Credentials")

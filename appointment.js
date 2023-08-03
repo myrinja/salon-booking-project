@@ -6,16 +6,27 @@
     event.preventDefault();
 
     const name = document.getElementById("name").value;
-    const hairstyle = document.getElementById("hairstyle").value;
+   // const hairstyle = document.getElementById("hairstyle").value;
     const day = document.getElementById("day").value;
-    const file = document.getElementById("myfile").files[0]
+    const fileInput = document.getElementById("myfile");
+
+    const selectedHairstyle = document.getElementById("hairstyle");
+    const selectedHairstyleName = selectedHairstyle.options[selectedHairstyle.selectedIndex].value;
+    const selectedHairstyleValue = selectedHairstyle.options[selectedHairstyle.selectedIndex].getAttribute("data-value");
+
+
+
+
+const selectedFile = fileInput.files[0];
+const fileName = selectedFile.name;
     const appointment = {
       name,
-      hairstyle,
+      selectedHairstyleName,
       day,
-      file,
+      fileName
     };
-
+   // const file = document.getElementById("myfile").files[0]
+   
     saveAppointment(appointment);
     form.reset();
   });

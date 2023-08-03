@@ -11,8 +11,54 @@
       "hairstyle": "hairstyle2",
       "day": "2023-08-02",
       "id": 2
+    },
+    {
+      "name": "miriam",
+      "hairstyle": "3",
+      "day": "2023-08-18",
+      "id": 3
+    },
+    {
+      "name": "ann",
+      "hairstyle": "1",
+      "day": "2023-08-12",
+      "id": 4
+    },
+    {
+      "name": "ann",
+      "hairstyle": "3",
+      "day": "2023-08-18",
+      "fileName": "style one.jpg",
+      "id": 5
+    },
+    {
+      "name": "shaaz",
+      "selectedHairstyleName": "3",
+      "day": "2023-08-05",
+      "fileName": "style one.jpg",
+      "id": 6
+    },
+    {
+      "name": "janz",
+      "selectedHairstyleName": "1",
+      "day": "2023-08-12",
+      "fileName": "style one.jpg",
+      "id": 7
+    },
+    {
+      "name": "nancy",
+      "selectedHairstyleName": "2",
+      "day": "2023-08-12",
+      "fileName": "style one.jpg",
+      "id": 8
+    },
+    {
+      "name": "demta",
+      "selectedHairstyleName": "4",
+      "day": "2023-08-25",
+      "fileName": "style one.jpg",
+      "id": 9
     }
-    
   ],
   "hairstyles": [
     {
@@ -42,7 +88,7 @@
     {
       "id": 5,
       "name": "Messy Bun",
-      "image_url": "/images/lady3-removebg-preview.png" ,
+      "image_url": "/images/lady3-removebg-preview.png",
       "price": 30
     }
   ]

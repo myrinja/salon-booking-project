@@ -15,8 +15,9 @@ function displayappointment(){
             ul.appendChild(li)
             li.innerHTML = `
             <p><strong>Name:</strong> ${appointment.name}</p>
-          <p><strong>Hair Style:</strong> ${appointment.hairstyle}</p>
+          <p><strong>Hair Style:</strong> ${appointment.selectedHairstyleName}</p>
           <p><strong>Day to Attend:</strong> ${appointment.day}</p>
+          <img src= '${appointment.fileName}'>
           <hr>
             
             `
