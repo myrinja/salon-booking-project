@@ -13,12 +13,10 @@ body {
   background-size: cover;
   /*filter: blur(8px);*/
   backdrop-filter: blur(100px);
+  text-align: center;
   
   }
-  /*.background{
-    filter: blur(100%);
-    -webkit-filter: blur(1500px);
-  }*/
+  
   a:link {
     color: green;
     text-decoration: none;
@@ -82,28 +80,65 @@ body {
     margin-top: 2rem;
   }
   #listy{
-    display: inline-block;
-    margin-left: 20%;
+    display: inline;
+    width: 1000px;
+    height: 1000px;
     
   }
   #listy h1{
-    color: rgb(145, 58, 58);
+
+    margin: 10px auto;
+    padding: 5px;
+    padding-right:210px;
+    display: block;
     align-items: center;
-    margin-left: 25%;
-    padding: 5%;
+
+
+
+   color: rgb(211, 103, 103);
+    /*align-items: center;
+    margin-right: 10%;
+    border: 1px solid rgb(211, 103, 103);
+    max-width: 150px;
+    border-radius: 5px;
+    margin: 2px auto;
+    display: ;*/
   }
   #listy li{
-    display: inline-block;
-    padding: 5%;
+    
+    width: 100Px;
+    height: 90px;
+    padding: 50px;
     align-items: center;
+    margin:  10px ;
+    display: inline-table;
     size: 50%;
+    padding-right: 20%;
+    
+    
   }
 
-  /* style for admin login page*/
+  /* style for landing page*/
   a {
-   margin: 1px;
-    padding: 10Px;
-    padding-left: 200px;
-    display: flex;
+   margin: 10px auto;
+    padding: 5px;
+    padding-left: px;
+    display: block;
     align-items: center;
+  }
+  #loginForm {
+    margin-top: 20px;
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  h1#services{
+    color: blue;
+   padding: 20px; 
+   margin: 10Px auto;
+   margin-left: 20px;
+   margin-right:80% ;
   }

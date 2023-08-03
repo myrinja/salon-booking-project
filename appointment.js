@@ -51,29 +51,11 @@
   })
 
 
-  /*function displayAppointments() {
-    fetch(base_url)
-      .then((response) => response.json())
-      .then((data) => {
-        appointmentList.innerHTML = "";
-        data.forEach((appointment) => {
-          const appointmentDiv = document.createElement("div");
-          appointmentDiv.classList.add("appointment-item");
-          appointmentDiv.innerHTML = `
-            <p><strong>Name:</strong> ${appointment.name}</p>
-            <p><strong>Hair Style:</strong> ${appointment.hairstyle}</p>
-            <p><strong>Day to Attend:</strong> ${appointment.day}</p>
-            <hr>
-          `;
-          appointmentList.appendChild(appointmentDiv);
-        });
-      });
-  }*/
 
   function redirectToIndex() {
-    window.location.href = ""; // Replace with your login page URL
+    window.location.href = "index.html"; 
   }
 
-  displayAppointments();
+  
 
     

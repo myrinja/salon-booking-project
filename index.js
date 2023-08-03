@@ -59,9 +59,10 @@ document.getElementById("loginForm").addEventListener("submit", (event) => {
         const ul = document.getElementById("mystyle")
         const li = document.createElement("li")
         ul.appendChild(li)
+        li.id = "mylist"
         li.innerHTML = `
         <p>Hairstyle name:${hairstyle.name} </p>
-        <p>Price:${hairstyle.price}$</p>
+        <p>Price:$${hairstyle.price}</p>
         <img src= '${hairstyle.image_url}'>
         
         `
