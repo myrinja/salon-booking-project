@@ -58,6 +58,48 @@
       "day": "2023-08-25",
       "fileName": "style one.jpg",
       "id": 9
+    },
+    {
+      "name": "dimp",
+      "selectedHairstyleName": "4",
+      "day": "2023-08-12",
+      "fileName": "style_one-removebg-preview.png",
+      "id": 10
+    },
+    {
+      "name": "ann",
+      "selectedHairstyleName": "",
+      "day": "2023-08-11",
+      "fileName": "lady4-removebg-preview.png",
+      "id": 11
+    },
+    {
+      "name": "jane",
+      "selectedHairstyleName": "2",
+      "day": "2023-08-11",
+      "fileName": "style_one-removebg-preview.png",
+      "id": 12
+    },
+    {
+      "name": "jemmy",
+      "selectedHairstyleName": "",
+      "day": "2023-08-23",
+      "fileName": "style one.jpg",
+      "id": 13
+    },
+    {
+      "name": "shalon",
+      "hairstyle": "1",
+      "day": "2023-08-11",
+      "fileName": "style one.jpg",
+      "id": 14
+    },
+    {
+      "name": "jambz",
+      "hairstyle": "",
+      "day": "2023-08-16",
+      "fileName": "style one.jpg",
+      "id": 15
     }
   ],
   "hairstyles": [

@@ -6,14 +6,14 @@
     event.preventDefault();
 
     const name = document.getElementById("name").value;
-   // const hairstyle = document.getElementById("hairstyle").value;
+    const hairstyle = document.getElementById("hairstyle").value;
     const day = document.getElementById("day").value;
     const fileInput = document.getElementById("myfile");
 
-    const selectedHairstyle = document.getElementById("hairstyle");
+    /*const selectedHairstyle = document.getElementById("hairstyle");
     const selectedHairstyleName = selectedHairstyle.options[selectedHairstyle.selectedIndex].value;
     const selectedHairstyleValue = selectedHairstyle.options[selectedHairstyle.selectedIndex].getAttribute("data-value");
-
+*/
 
 
 
@@ -21,7 +21,7 @@ const selectedFile = fileInput.files[0];
 const fileName = selectedFile.name;
     const appointment = {
       name,
-      selectedHairstyleName,
+      hairstyle,
       day,
       fileName
     };
@@ -41,7 +41,7 @@ const fileName = selectedFile.name;
       },
       body: JSON.stringify(appointment),
     }).then(() => {
-      //displayAppointments(); // Call displayAppointments after saving the new appointment
+      
     alert("Appointment made successful")
       redirectToIndex(); // Call the function to redirect to the login page
       
@@ -66,6 +66,7 @@ const fileName = selectedFile.name;
   function redirectToIndex() {
     window.location.href = "index.html"; 
   }
+  
 
   
 
