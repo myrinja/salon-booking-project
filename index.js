@@ -48,7 +48,7 @@ document.getElementById("loginForm").addEventListener("submit", (event) => {
     //}
   });
   //fetch data and display on landing page
-  const style_url = "https://db-vercel-delta.vercel.app/hairstyles"
+  const style_url = "http://localhost:3000/hairstyles"
 
   function displayHairstyle(){
     fetch(style_url)

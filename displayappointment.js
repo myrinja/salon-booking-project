@@ -1,6 +1,6 @@
 
     const div = document.getElementById("appointmentList")
-const url = "https://db-vercel-delta.vercel.app/appointments"
+const url = "http://localhost:3000/appointments"
  
 
 

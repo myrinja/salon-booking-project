@@ -31,7 +31,7 @@ const fileName = selectedFile.name;
     form.reset();
   });
 
-  const base_url = "https://db-vercel-delta.vercel.app/appointments";
+  const base_url = "http://localhost:3000/appointments";
 
   function saveAppointment(appointment) {
     fetch(base_url, {
@@ -47,7 +47,7 @@ const fileName = selectedFile.name;
       
     });
   }
-  const style_url = "https://db-vercel-delta.vercel.app/hairstyles"
+  const style_url = "http://localhost:3000/hairstyles"
   fetch(style_url)
   .then(res => res.json())
   .then(data => {
